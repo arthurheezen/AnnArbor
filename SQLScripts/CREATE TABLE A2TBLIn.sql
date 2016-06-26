@@ -1,0 +1,23 @@
+CREATE TABLE 
+  A2TBLIn (
+    PageNum           INTEGER,
+    LeftMP            INTEGER,
+    LowerMP           INTEGER,
+    RightMP           INTEGER,
+    UpperMP           INTEGER,
+    WidthMP           INTEGER,
+    HeightMP          INTEGER,
+    VCumulativeMP     INTEGER,
+    PDFString         TEXT,
+    GroupName         TEXT,
+    GroupCode         TEXT,
+    GroupDesc         TEXT,
+    SectionL1Code     TEXT,
+    SectionL2Code     TEXT,
+    AccountCode       TEXT,
+    AccountDesc       TEXT,
+    GrpSectTotal      INTEGER,
+    ColumnNum         INTEGER,
+    NumberScale2      INTEGER,
+    Treatment         TEXT,
+    ThroughDate       TEXT)

@@ -10,6 +10,9 @@ from pdfminer.converter import PDFPageAggregator
 import pdfminer
 import sqlite3
 import re
+import sys
+import pandas.io.sql as sql
+import pandas as pd
 
 def init_db(cur):
     cur.execute(open(r'SQLScripts\CREATE TABLE A2TBLIn.sql', 'r').read())
@@ -289,8 +292,9 @@ def build_output_table(cur):
     db.commit()
 
     
-    
-# Program starts here:
+########################
+# Program starts here: #
+########################
 
 # Pre-compile all regular expressions patterns to be used
 pNumber = re.compile(r'^(\()?\$?(\d{0,3})(?:,(\d{3}))?(?:,(\d{3}))?(?:,(\d{3}))?(?:,(\d{3}))?\.(\d{2})(\))?\n$')
@@ -312,12 +316,12 @@ pPageNumber = re.compile(r'^Page \d{1,3} of \d{3}\n$')
 pCid = re.compile(r'^.* \(cid:160\)  .*\n$')
 
 # Connect to a new sqlite database
-db = sqlite3.connect(r'a2tbl.sqlite')
+db = sqlite3.connect("Output\\" + str(sys.argv[1]) + ".db")
 cur = db.cursor()
 init_db(cur)
 
 # Open the input PDF report
-fp = open(r'Reports\2016_02.pdf', 'rb')
+fp = open("Reports\\" + str(sys.argv[1]) + ".pdf", 'rb')
 
 # Create a PDF parser object associated with the file object.
 parser = PDFParser(fp)
@@ -371,6 +375,9 @@ group_sect_limits(cur)
 summarize_dimensions(cur)
 
 build_output_table(cur)
+
+#table = pd.io.sql.read_sql('select * from A2TBLOut', db)
+#table.to_csv("Output\\" + str(sys.argv[1]) + ".csv")
 
 db.commit()
 db.close()

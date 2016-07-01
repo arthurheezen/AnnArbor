@@ -1,3 +1,13 @@
+# ParseA2TBL.py - python Parser for Ann Arbor Trial Balance Listing report
+# Python 2.7
+
+# Usage:
+#   python ParseA2TBL <InputPDFFileNameNoExtension>
+# Example:
+#   python ParseA2TBL.py "A2 TBL 2013_01"
+#   - uses input file "Reports\\A2 TBL 2013_01.pdf"
+
+# Imports
 from pdfminer.pdfparser import PDFParser
 from pdfminer.pdfdocument import PDFDocument
 from pdfminer.pdfpage import PDFPage
@@ -7,12 +17,11 @@ from pdfminer.pdfinterp import PDFPageInterpreter
 from pdfminer.pdfdevice import PDFDevice
 from pdfminer.layout import LAParams
 from pdfminer.converter import PDFPageAggregator
-import pdfminer
-import sqlite3
-import re
-import sys
-import pandas.io.sql as sql
-import pandas as pd
+import pdfminer  # pdfminer reads input PDF report
+import sqlite3   # sqlite3 database stores all temporary data
+import re        # regular expressions are used to match and parse text strings
+import sys       # for command line parameter retrieval
+#from __future__ import print_function
 
 def init_db(cur):
     cur.execute(open(r'SQLScripts\CREATE TABLE A2TBLIn.sql', 'r').read())
@@ -291,10 +300,21 @@ def build_output_table(cur):
     cur.execute(open(r'SQLScripts\CREATE TABLE A2TBLOut.sql', 'r').read())
     db.commit()
 
+def validate_totals(cur, validation, outname):
     
+    cur.execute(open('SQLScripts\\' + validation + '.sql', 'r').read())
+    f = open('Output\\' + outname + ' ' + validation + '.txt', 'w')
+    names = list(map(lambda x: x[0], cur.description))
+    print >>f,'\t'.join(names)
+    for row in cur:
+        print >>f,'\t'.join(str(e)) for e in row
+
+
+
 ########################
 # Program starts here: #
 ########################
+
 
 # Pre-compile all regular expressions patterns to be used
 pNumber = re.compile(r'^(\()?\$?(\d{0,3})(?:,(\d{3}))?(?:,(\d{3}))?(?:,(\d{3}))?(?:,(\d{3}))?\.(\d{2})(\))?\n$')
@@ -316,7 +336,7 @@ pPageNumber = re.compile(r'^Page \d{1,3} of \d{3}\n$')
 pCid = re.compile(r'^.* \(cid:160\)  .*\n$')
 
 # Connect to a new sqlite database
-db = sqlite3.connect("Output\\" + str(sys.argv[1]) + ".db")
+db = sqlite3.connect("Output\\" + str(sys.argv[1]) + ".sqlite")
 cur = db.cursor()
 init_db(cur)
 
@@ -349,23 +369,23 @@ device = PDFPageAggregator(rsrcmgr, laparams=laparams)
 
 # Create a PDF interpreter object.
 interpreter = PDFPageInterpreter(rsrcmgr, device)
-    
+
 # initialize the page number
 myPageNum = 1
-			
+
 # loop over all pages in the document
 for page in PDFPage.create_pages(document):
-
+    
     # read the page into a layout object
     interpreter.process_page(page)
     layout = device.get_result()
-
+    
     # extract text from this object
     parse_obj(cur, layout._objs)
     
-    # commit the new page's rows to the database
+    # commit the new page's information to the database
     db.commit()
-
+    
     # advance the page number
     myPageNum = myPageNum + 1
 
@@ -376,8 +396,7 @@ summarize_dimensions(cur)
 
 build_output_table(cur)
 
-#table = pd.io.sql.read_sql('select * from A2TBLOut', db)
-#table.to_csv("Output\\" + str(sys.argv[1]) + ".csv")
+#validate_totals(cur, str(sys.argv[1]), "Validation By Fund")
 
 db.commit()
 db.close()

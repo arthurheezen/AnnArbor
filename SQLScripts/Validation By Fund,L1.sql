@@ -37,20 +37,46 @@ FROM(
       AND [Agency] = "" 
       AND [Total Indicator] = "Y"
       
-    UNION ALL
-      
+    UNION ALL 
+
     SELECT 
-      Fund,
-      [Chart Section Level 1],
-      [Balance Forward],
-      [YTD Debits],
-      [YTD Credits],
-      [Ending Balance],
-      [Prior Year YTD Balance] 
-    FROM 
-      A2TBLOut
-    WHERE [Total Indicator]="N"
+      AllRecords.*
+    FROM (
+
+        SELECT 
+          Fund,
+          [Chart Section Level 1]
+        FROM 
+          A2TBLOut
+        WHERE 
+          Fund <> "" 
+          AND [Chart Section Level 1] <> "" 
+          AND [Chart Section Level 2] = "" 
+          AND [Agency] = "" 
+          AND [Total Indicator] = "Y"
+      ) ItemsWithTotals
+    
+    INNER JOIN (
+
+        SELECT 
+          Fund,
+          [Chart Section Level 1],
+          [Balance Forward],
+          [YTD Debits],
+          [YTD Credits],
+          [Ending Balance],
+          [Prior Year YTD Balance] 
+        FROM 
+          A2TBLOut
+        WHERE [Total Indicator]="N"
+    
+      ) AllRecords
+    
+    ON ItemsWithTotals.Fund = AllRecords.Fund
+      AND ItemsWithTotals.[Chart Section Level 1] = AllRecords.[Chart Section Level 1]
+      
   ) AllRecords
+
 GROUP BY 
   Fund,
   [Chart Section Level 1]

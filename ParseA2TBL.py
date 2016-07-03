@@ -296,16 +296,16 @@ def summarize_dimensions(cur):
 
 def build_output_table(cur, outname):
     
-    cur.execute(open('SQLScripts\\CREATE TABLE A2TBLOut.sql', 'r').read())
-    db.commit()
-    cur.execute('SELECT * FROM A2TBLOut')
+    #cur.execute(open('SQLScripts\\CREATE TABLE A2TBLOut.sql', 'r').read())
+    #db.commit()
+    cur.execute('SELECT * FROM A2TBLOut WHERE [Total Indicator]="N"')
     f = open('Output\\' + outname + ' A2TBLOut.txt', 'w')
     names = list(map(lambda x: x[0], cur.description))
     print >>f,'\t'.join(names)
     for row in cur:
-        print >>f,'\t'.join(str(e) for e in row)
+        print >>f,u"\t".join(unicode(e).replace(u"\u2018", "'").replace(u"\u2019", "'") for e in row)
 
-def validate_totals(cur, validation, outname):
+def validate_totals(cur, outname, validation):
     
     cur.execute(open('SQLScripts\\' + validation + '.sql', 'r').read())
     f = open('Output\\' + outname + ' ' + validation + '.txt', 'w')
@@ -343,71 +343,71 @@ pCid = re.compile(r'^.* \(cid:160\)  .*\n$')
 # Connect to a new sqlite database
 db = sqlite3.connect("Output\\" + str(sys.argv[1]) + ".sqlite")
 cur = db.cursor()
-init_db(cur)
+# init_db(cur)
 
-# Open the input PDF report
-fp = open("Reports\\" + str(sys.argv[1]) + ".pdf", 'rb')
+# # Open the input PDF report
+# fp = open("Reports\\" + str(sys.argv[1]) + ".pdf", 'rb')
 
-# Create a PDF parser object associated with the file object.
-parser = PDFParser(fp)
+# # Create a PDF parser object associated with the file object.
+# parser = PDFParser(fp)
 
-# Create a PDF document object that stores the document structure.
-# Password for initialization as 2nd parameter
-document = PDFDocument(parser)
+# # Create a PDF document object that stores the document structure.
+# # Password for initialization as 2nd parameter
+# document = PDFDocument(parser)
 
-# Check if the document allows text extraction. If not, abort.
-if not document.is_extractable:
-    raise PDFTextExtractionNotAllowed
+# # Check if the document allows text extraction. If not, abort.
+# if not document.is_extractable:
+    # raise PDFTextExtractionNotAllowed
 
-# Create a PDF resource manager object that stores shared resources.
-rsrcmgr = PDFResourceManager()
+# # Create a PDF resource manager object that stores shared resources.
+# rsrcmgr = PDFResourceManager()
 
-# Create a PDF device object.
-device = PDFDevice(rsrcmgr)
+# # Create a PDF device object.
+# device = PDFDevice(rsrcmgr)
 
-# BEGIN LAYOUT ANALYSIS
-# Set parameters for analysis.
-laparams = LAParams()
+# # BEGIN LAYOUT ANALYSIS
+# # Set parameters for analysis.
+# laparams = LAParams()
 
-# Create a PDF page aggregator object.
-device = PDFPageAggregator(rsrcmgr, laparams=laparams)
+# # Create a PDF page aggregator object.
+# device = PDFPageAggregator(rsrcmgr, laparams=laparams)
 
-# Create a PDF interpreter object.
-interpreter = PDFPageInterpreter(rsrcmgr, device)
+# # Create a PDF interpreter object.
+# interpreter = PDFPageInterpreter(rsrcmgr, device)
 
-# initialize the page number
-myPageNum = 1
+# # initialize the page number
+# myPageNum = 1
 
-# loop over all pages in the document
-for page in PDFPage.create_pages(document):
+# # loop over all pages in the document
+# for page in PDFPage.create_pages(document):
     
-    # read the page into a layout object
-    interpreter.process_page(page)
-    layout = device.get_result()
+    # # read the page into a layout object
+    # interpreter.process_page(page)
+    # layout = device.get_result()
     
-    # extract text from this object
-    parse_obj(cur, layout._objs)
+    # # extract text from this object
+    # parse_obj(cur, layout._objs)
     
-    # commit the new page's information to the database
-    db.commit()
+    # # commit the new page's information to the database
+    # db.commit()
     
-    # advance the page number
-    myPageNum = myPageNum + 1
+    # # advance the page number
+    # myPageNum = myPageNum + 1
 
-merge_records(cur)
-update_total_records(cur)
-group_sect_limits(cur)
-summarize_dimensions(cur)
+# merge_records(cur)
+# update_total_records(cur)
+# group_sect_limits(cur)
+# summarize_dimensions(cur)
 
 build_output_table(cur, str(sys.argv[1]))
 
-validate_totals(cur, "Validation By Fund", str(sys.argv[1]))
-validate_totals(cur, "Validation By Fund,L1", str(sys.argv[1]))
-validate_totals(cur, "Validation By Fund,L1,L2", str(sys.argv[1]))
-validate_totals(cur, "Validation By Fund,L1,L2,Agency", str(sys.argv[1]))
-validate_totals(cur, "Validation By Fund,L1,L2,Agency,Organization", str(sys.argv[1]))
-validate_totals(cur, "Validation By Fund,L1,L2,Agency,Organization,Activity", str(sys.argv[1]))
-validate_totals(cur, "Validation By Fund,L1,L2,Agency,Organization,Activity,Function", str(sys.argv[1]))
+validate_totals(cur, str(sys.argv[1]), "Validation By Fund")
+validate_totals(cur, str(sys.argv[1]), "Validation By Fund,L1")
+validate_totals(cur, str(sys.argv[1]), "Validation By Fund,L1,L2")
+validate_totals(cur, str(sys.argv[1]), "Validation By Fund,L1,L2,Agency")
+validate_totals(cur, str(sys.argv[1]), "Validation By Fund,L1,L2,Agency,Organization")
+validate_totals(cur, str(sys.argv[1]), "Validation By Fund,L1,L2,Agency,Organization,Activity")
+validate_totals(cur, str(sys.argv[1]), "Validation By Fund,L1,L2,Agency,Organization,Activity,Function")
 
 db.commit()
 db.close()

@@ -303,7 +303,7 @@ def build_output_table(cur, outname):
     names = list(map(lambda x: x[0], cur.description))
     print >>f,'\t'.join(names)
     for row in cur:
-        print >>f,u"\t".join(unicode(e).replace(u"\u2018", "'").replace(u"\u2019", "'") for e in row)
+        print >>f,u"\t".join(unicode(e).replace(u"\u2018", "'").replace(u"\u2019", "'").replace(u"\u2013", "-") for e in row)
 
 def validate_totals(cur, outname, validation):
     

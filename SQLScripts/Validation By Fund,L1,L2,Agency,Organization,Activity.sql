@@ -13,13 +13,12 @@ SELECT
   SUM([YTD Credits]) AS [Error in YTD Credits Totals],
   SUM([Ending Balance]) AS [Error in Ending Balance Totals],
   SUM([Prior Year YTD Balance]) AS [Error in Prior Year YTD Balance Totals],
-  ABS(
-      SUM([Balance Forward]) + 
-      SUM([YTD Debits]) + 
-      SUM([YTD Credits]) + 
-      SUM([Ending Balance]) + 
-      SUM([Prior Year YTD Balance])
-    ) AS [Total Deviation]
+  ABS(SUM([Balance Forward]))
+  + ABS(SUM([YTD Debits]))
+  + ABS(SUM([YTD Credits]))
+  + ABS(SUM([Ending Balance]))
+  + ABS(SUM([Prior Year YTD Balance]))
+      AS [Total Deviation]
 
 -- Negate totals and union with raw records
 FROM(
@@ -69,9 +68,3 @@ GROUP BY
   [Agency],
   [Organization],
   [Activity]
---HAVING
---  SUM([Balance Forward]) <> 0 OR
---  SUM([YTD Debits]) <> 0 OR 
---  SUM([YTD Credits]) <> 0 OR 
---  SUM([Ending Balance]) <> 0 OR 
---  SUM([Prior Year YTD Balance]) <> 0

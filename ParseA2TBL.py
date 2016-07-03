@@ -294,11 +294,16 @@ def summarize_dimensions(cur):
     cur.execute(open(r'SQLScripts\CREATE TABLE A2Functions.sql', 'r').read())
     db.commit()
 
-def build_output_table(cur):
+def build_output_table(cur, outname):
     
-    # build and populate output table as A2TBLOut    
-    cur.execute(open(r'SQLScripts\CREATE TABLE A2TBLOut.sql', 'r').read())
+    cur.execute(open('SQLScripts\\CREATE TABLE A2TBLOut.sql', 'r').read())
     db.commit()
+    cur.execute('SELECT * FROM A2TBLOut')
+    f = open('Output\\' + outname + ' A2TBLOut.txt', 'w')
+    names = list(map(lambda x: x[0], cur.description))
+    print >>f,'\t'.join(names)
+    for row in cur:
+        print >>f,'\t'.join(str(e) for e in row)
 
 def validate_totals(cur, validation, outname):
     
@@ -307,7 +312,7 @@ def validate_totals(cur, validation, outname):
     names = list(map(lambda x: x[0], cur.description))
     print >>f,'\t'.join(names)
     for row in cur:
-        print >>f,'\t'.join(str(e)) for e in row
+        print >>f,'\t'.join(str(e) for e in row)
 
 
 
@@ -394,9 +399,15 @@ update_total_records(cur)
 group_sect_limits(cur)
 summarize_dimensions(cur)
 
-build_output_table(cur)
+build_output_table(cur, str(sys.argv[1]))
 
-#validate_totals(cur, str(sys.argv[1]), "Validation By Fund")
+validate_totals(cur, "Validation By Fund", str(sys.argv[1]))
+validate_totals(cur, "Validation By Fund,L1", str(sys.argv[1]))
+validate_totals(cur, "Validation By Fund,L1,L2", str(sys.argv[1]))
+validate_totals(cur, "Validation By Fund,L1,L2,Agency", str(sys.argv[1]))
+validate_totals(cur, "Validation By Fund,L1,L2,Agency,Organization", str(sys.argv[1]))
+validate_totals(cur, "Validation By Fund,L1,L2,Agency,Organization,Activity", str(sys.argv[1]))
+validate_totals(cur, "Validation By Fund,L1,L2,Agency,Organization,Activity,Function", str(sys.argv[1]))
 
 db.commit()
 db.close()

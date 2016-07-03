@@ -54,6 +54,7 @@ FROM(
     FROM 
       A2TBLOut
     WHERE [Total Indicator]="N"
+      AND [Chart Section Level 2] <> "" 
   ) AllRecords
 GROUP BY 
   Fund,

@@ -45,16 +45,18 @@ AS
   -- Union L1 limits with no total/end
   SELECT 
     NoSectionEnd.SectionL1Start AS SectionL1Start, 
-    MIN(AllStartsUnionFundTotals.SectionL1Start)-10801 AS SectionL1End,
+    MIN(AllStartsUnionFundTotals.SectionL1Start)-10800 AS SectionL1End,
     NoSectionEnd.SectionL1Code AS SectionL1Code
   FROM (
+  
       SELECT 
         SectionL1Code,
         SectionL1Start
       FROM   
         A2SectionL1LimitsTemp
       WHERE
-       SectionL1End=0
+       SectionL1End = 0
+       
     ) NoSectionEnd
     
   INNER JOIN (

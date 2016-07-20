@@ -308,12 +308,15 @@ def build_output_table(cur, outname):
 
 def validate_totals(cur, outname, validation):
     
+    totalError = 0
     cur.execute(open('SQLScripts\\' + validation + '.sql', 'r').read())
     f = open('Output\\' + outname + ' ' + validation + '.txt', 'w')
     names = list(map(lambda x: x[0], cur.description))
     print >>f,'\t'.join(names)
     for row in cur:
         print >>f,'\t'.join(str(e) for e in row)
+        totalError += abs(row[-1])
+    return totalError
 
 
 
@@ -402,13 +405,13 @@ summarize_dimensions(cur)
 
 build_output_table(cur, str(sys.argv[1]))
 
-validate_totals(cur, str(sys.argv[1]), "Validation By Fund")
-validate_totals(cur, str(sys.argv[1]), "Validation By Fund,L1")
-validate_totals(cur, str(sys.argv[1]), "Validation By Fund,L1,L2")
-validate_totals(cur, str(sys.argv[1]), "Validation By Fund,L1,L2,Agency")
-validate_totals(cur, str(sys.argv[1]), "Validation By Fund,L1,L2,Agency,Organization")
-validate_totals(cur, str(sys.argv[1]), "Validation By Fund,L1,L2,Agency,Organization,Activity")
-validate_totals(cur, str(sys.argv[1]), "Validation By Fund,L1,L2,Agency,Organization,Activity,Function")
+print validate_totals(cur, str(sys.argv[1]), "Validation By Fund")
+print validate_totals(cur, str(sys.argv[1]), "Validation By Fund,L1")
+print validate_totals(cur, str(sys.argv[1]), "Validation By Fund,L1,L2")
+print validate_totals(cur, str(sys.argv[1]), "Validation By Fund,L1,L2,Agency")
+print validate_totals(cur, str(sys.argv[1]), "Validation By Fund,L1,L2,Agency,Organization")
+print validate_totals(cur, str(sys.argv[1]), "Validation By Fund,L1,L2,Agency,Organization,Activity")
+print validate_totals(cur, str(sys.argv[1]), "Validation By Fund,L1,L2,Agency,Organization,Activity,Function")
 
 db.commit()
 db.close()

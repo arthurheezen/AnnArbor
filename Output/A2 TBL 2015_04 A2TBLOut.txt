@@ -12755,197 +12755,51 @@ Fund	Fund Description	Chart Section Level 1	Chart Section Level 2	Agency	Agency 
 0077	Sewer Bond Series XX 2004 SRF	EXPENSES		040	Public Services	9877	2008 Footing Drain Disc-SWQIF	4538	Construction - Other			4540	Burden	N	0	528	0	528	0
 0078	Community Dev Block Grant 	ASSETS										2197	Community Development Loan Receivable	N	2080523	0	0	2080523	2080523
 0078	Community Dev Block Grant 	ASSETS										2400.0099	Equity In Pooled cash & investments	N	9048733	77924	19442	9107215	9116959
-0078	Community Dev Block Grant 	ASSETS	LIABILITIES									5551	Deferred Revenue	N	-11128818	0	0	-11128818	-2080523
 0078	Community Dev Block Grant 	LIABILITIES AND FUND EQUITY	LIABILITIES									5551	Deferred Revenue	N	-11128818	0	0	-11128818	-2080523
-0078	Community Dev Block Grant 	ASSETS	FUND EQUITY									6606	Fund Balance	N	-438	0	0	-438	-438
 0078	Community Dev Block Grant 	LIABILITIES AND FUND EQUITY	FUND EQUITY									6606	Fund Balance	N	-438	0	0	-438	-438
-0078	Community Dev Block Grant 	ASSETS		018	Finance	1000	Administration	0000	Revenue			6200	Investment Income	N	0	19442	77924	-58482	-68226
-0078	Community Dev Block Grant 	LIABILITIES AND FUND EQUITY		018	Finance	1000	Administration	0000	Revenue			6200	Investment Income	N	0	19442	77924	-58482	-68226
 0078	Community Dev Block Grant 	REVENUES		018	Finance	1000	Administration	0000	Revenue			6200	Investment Income	N	0	19442	77924	-58482	-68226
-0078	Community Dev Block Grant 	ASSETS												N	0	97366	97366	0	9048295
-0078	Community Dev Block Grant 	LIABILITIES AND FUND EQUITY												N	0	97366	97366	0	9048295
-0078	Community Dev Block Grant 	REVENUES												N	0	97366	97366	0	9048295
-0078	Community Dev Block Grant 	ASSETS										2400.0099	Equity In Pooled cash & investments	N	-128774261	7754526	109167417	-230187152	-120676673
-0078	Community Dev Block Grant 	LIABILITIES AND FUND EQUITY										2400.0099	Equity In Pooled cash & investments	N	-128774261	7754526	109167417	-230187152	-120676673
-0078	Community Dev Block Grant 	REVENUES										2400.0099	Equity In Pooled cash & investments	N	-128774261	7754526	109167417	-230187152	-120676673
-0078	Community Dev Block Grant 	ASSETS										2400.0099	Equity In Pooled cash & investments	N	-128774261	7754526	109167417	-230187152	-120676673
 0081	Storm Sewer Revenue Bonds	ASSETS										2400.0099	Equity In Pooled cash & investments	N	-128774261	7754526	109167417	-230187152	-120676673
-0081	Storm Sewer Revenue Bonds	LIABILITIES AND FUND EQUITY										2400.0099	Equity In Pooled cash & investments	N	-128774261	7754526	109167417	-230187152	-120676673
-0081	Storm Sewer Revenue Bonds	REVENUES										2400.0099	Equity In Pooled cash & investments	N	-128774261	7754526	109167417	-230187152	-120676673
-0081	Storm Sewer Revenue Bonds	ASSETS										2400.0099	Equity In Pooled cash & investments	N	-128774261	7754526	109167417	-230187152	-120676673
-0078	Community Dev Block Grant 	LIABILITIES AND FUND EQUITY	LIABILITIES									4001	Accounts Payable	N	0	1608793	1608793	0	0
-0078	Community Dev Block Grant 	REVENUES	LIABILITIES									4001	Accounts Payable	N	0	1608793	1608793	0	0
-0078	Community Dev Block Grant 	LIABILITIES AND FUND EQUITY	LIABILITIES									4001	Accounts Payable	N	0	1608793	1608793	0	0
 0081	Storm Sewer Revenue Bonds	LIABILITIES AND FUND EQUITY	LIABILITIES									4001	Accounts Payable	N	0	1608793	1608793	0	0
-0081	Storm Sewer Revenue Bonds	REVENUES	LIABILITIES									4001	Accounts Payable	N	0	1608793	1608793	0	0
-0081	Storm Sewer Revenue Bonds	LIABILITIES AND FUND EQUITY	LIABILITIES									4001	Accounts Payable	N	0	1608793	1608793	0	0
-0078	Community Dev Block Grant 	LIABILITIES AND FUND EQUITY	LIABILITIES									4002	Accrued Payroll	N	-29428	29428	0	0	0
-0078	Community Dev Block Grant 	REVENUES	LIABILITIES									4002	Accrued Payroll	N	-29428	29428	0	0	0
-0078	Community Dev Block Grant 	LIABILITIES AND FUND EQUITY	LIABILITIES									4002	Accrued Payroll	N	-29428	29428	0	0	0
 0081	Storm Sewer Revenue Bonds	LIABILITIES AND FUND EQUITY	LIABILITIES									4002	Accrued Payroll	N	-29428	29428	0	0	0
-0081	Storm Sewer Revenue Bonds	REVENUES	LIABILITIES									4002	Accrued Payroll	N	-29428	29428	0	0	0
-0081	Storm Sewer Revenue Bonds	LIABILITIES AND FUND EQUITY	LIABILITIES									4002	Accrued Payroll	N	-29428	29428	0	0	0
-0078	Community Dev Block Grant 	LIABILITIES AND FUND EQUITY	FUND EQUITY									6607	Retained Earnings	N	128803689	0	0	128803689	139712400
-0078	Community Dev Block Grant 	REVENUES	FUND EQUITY									6607	Retained Earnings	N	128803689	0	0	128803689	139712400
-0078	Community Dev Block Grant 	LIABILITIES AND FUND EQUITY	FUND EQUITY									6607	Retained Earnings	N	128803689	0	0	128803689	139712400
 0081	Storm Sewer Revenue Bonds	LIABILITIES AND FUND EQUITY	FUND EQUITY									6607	Retained Earnings	N	128803689	0	0	128803689	139712400
-0081	Storm Sewer Revenue Bonds	REVENUES	FUND EQUITY									6607	Retained Earnings	N	128803689	0	0	128803689	139712400
-0081	Storm Sewer Revenue Bonds	LIABILITIES AND FUND EQUITY	FUND EQUITY									6607	Retained Earnings	N	128803689	0	0	128803689	139712400
-0078	Community Dev Block Grant 	REVENUES		018	Finance	1000	Administration	0000	Revenue			6200	Investment Income	N	0	1558005	388526	1169479	945833
-0078	Community Dev Block Grant 	REVENUES		018	Finance	1000	Administration	0000	Revenue			6200	Investment Income	N	0	1558005	388526	1169479	945833
 0081	Storm Sewer Revenue Bonds	REVENUES		018	Finance	1000	Administration	0000	Revenue			6200	Investment Income	N	0	1558005	388526	1169479	945833
-0081	Storm Sewer Revenue Bonds	REVENUES		018	Finance	1000	Administration	0000	Revenue			6200	Investment Income	N	0	1558005	388526	1169479	945833
-0078	Community Dev Block Grant 	REVENUES		018	Finance	1000	Administration	0000	Revenue			6203	Interest/Dividends	N	0	0	300500	-300500	0
-0078	Community Dev Block Grant 	REVENUES		018	Finance	1000	Administration	0000	Revenue			6203	Interest/Dividends	N	0	0	300500	-300500	0
 0081	Storm Sewer Revenue Bonds	REVENUES		018	Finance	1000	Administration	0000	Revenue			6203	Interest/Dividends	N	0	0	300500	-300500	0
-0081	Storm Sewer Revenue Bonds	REVENUES		018	Finance	1000	Administration	0000	Revenue			6203	Interest/Dividends	N	0	0	300500	-300500	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9084	2014 Annual Street Resurfacing	9000	Capital Outlay			4420	Transfer To Other Funds	N	0	8090000	0	8090000	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9084	2014 Annual Street Resurfacing	9000	Capital Outlay			4420	Transfer To Other Funds	N	0	8090000	0	8090000	0
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9084	2014 Annual Street Resurfacing	9000	Capital Outlay			4420	Transfer To Other Funds	N	0	8090000	0	8090000	0
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9084	2014 Annual Street Resurfacing	9000	Capital Outlay			4420	Transfer To Other Funds	N	0	8090000	0	8090000	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9086	Springwater Improvements	9000	Capital Outlay			4420	Transfer To Other Funds	N	0	69799520	0	69799520	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9086	Springwater Improvements	9000	Capital Outlay			4420	Transfer To Other Funds	N	0	69799520	0	69799520	0
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9086	Springwater Improvements	9000	Capital Outlay			4420	Transfer To Other Funds	N	0	69799520	0	69799520	0
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9086	Springwater Improvements	9000	Capital Outlay			4420	Transfer To Other Funds	N	0	69799520	0	69799520	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			1100	Permanent Time Worked	N	0	108183	0	108183	50707
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			1100	Permanent Time Worked	N	0	108183	0	108183	50707
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			1100	Permanent Time Worked	N	0	108183	0	108183	50707
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			1100	Permanent Time Worked	N	0	108183	0	108183	50707
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			2100	Professional Services	N	0	1608793	0	1608793	356250
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			2100	Professional Services	N	0	1608793	0	1608793	356250
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			2100	Professional Services	N	0	1608793	0	1608793	356250
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			2100	Professional Services	N	0	1608793	0	1608793	356250
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4220	Life Insurance	N	0	179	0	179	86
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4220	Life Insurance	N	0	179	0	179	86
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4220	Life Insurance	N	0	179	0	179	86
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4220	Life Insurance	N	0	179	0	179	86
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4230	Medical Insurance	N	0	19628	0	19628	9403
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4230	Medical Insurance	N	0	19628	0	19628	9403
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4230	Medical Insurance	N	0	19628	0	19628	9403
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4230	Medical Insurance	N	0	19628	0	19628	9403
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4234	Disability Insurance	N	0	191	0	191	131
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4234	Disability Insurance	N	0	191	0	191	131
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4234	Disability Insurance	N	0	191	0	191	131
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4234	Disability Insurance	N	0	191	0	191	131
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4250	Social Security-Employer	N	0	7600	0	7600	3554
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4250	Social Security-Employer	N	0	7600	0	7600	3554
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4250	Social Security-Employer	N	0	7600	0	7600	3554
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4250	Social Security-Employer	N	0	7600	0	7600	3554
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4270	Dental Insurance	N	0	1715	0	1715	840
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4270	Dental Insurance	N	0	1715	0	1715	840
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4270	Dental Insurance	N	0	1715	0	1715	840
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4270	Dental Insurance	N	0	1715	0	1715	840
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4280	Optical Insurance	N	0	177	0	177	86
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4280	Optical Insurance	N	0	177	0	177	86
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4280	Optical Insurance	N	0	177	0	177	86
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4280	Optical Insurance	N	0	177	0	177	86
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4440	Unemployment Compensation	N	0	140	0	140	176
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4440	Unemployment Compensation	N	0	140	0	140	176
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4440	Unemployment Compensation	N	0	140	0	140	176
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7016	Design			4440	Unemployment Compensation	N	0	140	0	140	176
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			1100	Permanent Time Worked	N	0	0	0	0	72030
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			1100	Permanent Time Worked	N	0	0	0	0	72030
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			1100	Permanent Time Worked	N	0	0	0	0	72030
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			1100	Permanent Time Worked	N	0	0	0	0	72030
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			4220	Life Insurance	N	0	0	0	0	123
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			4220	Life Insurance	N	0	0	0	0	123
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			4220	Life Insurance	N	0	0	0	0	123
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			4220	Life Insurance	N	0	0	0	0	123
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			4230	Medical Insurance	N	0	0	0	0	17871
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			4230	Medical Insurance	N	0	0	0	0	17871
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			4230	Medical Insurance	N	0	0	0	0	17871
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			4230	Medical Insurance	N	0	0	0	0	17871
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			4250	Social Security-Employer	N	0	0	0	0	5422
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			4250	Social Security-Employer	N	0	0	0	0	5422
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			4250	Social Security-Employer	N	0	0	0	0	5422
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			4250	Social Security-Employer	N	0	0	0	0	5422
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			4270	Dental Insurance	N	0	0	0	0	1596
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			4270	Dental Insurance	N	0	0	0	0	1596
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			4270	Dental Insurance	N	0	0	0	0	1596
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			4270	Dental Insurance	N	0	0	0	0	1596
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			4280	Optical Insurance	N	0	0	0	0	165
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			4280	Optical Insurance	N	0	0	0	0	165
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			4280	Optical Insurance	N	0	0	0	0	165
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9087	Village Oaks-Chaucer Storm Impr	7018	Field Ops Charges			4280	Optical Insurance	N	0	0	0	0	165
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9130	2014 Sewer Lining	9000	Capital Outlay			4420	Transfer To Other Funds	N	0	13555022	0	13555022	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9130	2014 Sewer Lining	9000	Capital Outlay			4420	Transfer To Other Funds	N	0	13555022	0	13555022	0
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9130	2014 Sewer Lining	9000	Capital Outlay			4420	Transfer To Other Funds	N	0	13555022	0	13555022	0
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9130	2014 Sewer Lining	9000	Capital Outlay			4420	Transfer To Other Funds	N	0	13555022	0	13555022	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			1100	Permanent Time Worked	N	0	1353092	0	1353092	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			1100	Permanent Time Worked	N	0	1353092	0	1353092	0
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			1100	Permanent Time Worked	N	0	1353092	0	1353092	0
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			1100	Permanent Time Worked	N	0	1353092	0	1353092	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			1200	Temporary Pay	N	0	232400	0	232400	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			1200	Temporary Pay	N	0	232400	0	232400	0
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			1200	Temporary Pay	N	0	232400	0	232400	0
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			1200	Temporary Pay	N	0	232400	0	232400	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			1201	Temporary Pay Overtime	N	0	21000	0	21000	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			1201	Temporary Pay Overtime	N	0	21000	0	21000	0
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			1201	Temporary Pay Overtime	N	0	21000	0	21000	0
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			1201	Temporary Pay Overtime	N	0	21000	0	21000	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			1401	Overtime Paid-Permanent	N	0	88123	0	88123	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			1401	Overtime Paid-Permanent	N	0	88123	0	88123	0
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			1401	Overtime Paid-Permanent	N	0	88123	0	88123	0
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			1401	Overtime Paid-Permanent	N	0	88123	0	88123	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			2410	Rent City Vehicles	N	0	57917	0	57917	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			2410	Rent City Vehicles	N	0	57917	0	57917	0
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			2410	Rent City Vehicles	N	0	57917	0	57917	0
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			2410	Rent City Vehicles	N	0	57917	0	57917	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4220	Life Insurance	N	0	3268	0	3268	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4220	Life Insurance	N	0	3268	0	3268	0
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4220	Life Insurance	N	0	3268	0	3268	0
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4220	Life Insurance	N	0	3268	0	3268	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4230	Medical Insurance	N	0	97095	0	97095	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4230	Medical Insurance	N	0	97095	0	97095	0
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4230	Medical Insurance	N	0	97095	0	97095	0
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4230	Medical Insurance	N	0	97095	0	97095	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4234	Disability Insurance	N	0	57	0	57	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4234	Disability Insurance	N	0	57	0	57	0
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4234	Disability Insurance	N	0	57	0	57	0
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4234	Disability Insurance	N	0	57	0	57	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4250	Social Security-Employer	N	0	128924	0	128924	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4250	Social Security-Employer	N	0	128924	0	128924	0
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4250	Social Security-Employer	N	0	128924	0	128924	0
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4250	Social Security-Employer	N	0	128924	0	128924	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4270	Dental Insurance	N	0	8423	0	8423	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4270	Dental Insurance	N	0	8423	0	8423	0
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4270	Dental Insurance	N	0	8423	0	8423	0
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4270	Dental Insurance	N	0	8423	0	8423	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4280	Optical Insurance	N	0	871	0	871	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4280	Optical Insurance	N	0	871	0	871	0
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4280	Optical Insurance	N	0	871	0	871	0
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4280	Optical Insurance	N	0	871	0	871	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4440	Unemployment Compensation	N	0	10514	0	10514	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4440	Unemployment Compensation	N	0	10514	0	10514	0
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4440	Unemployment Compensation	N	0	10514	0	10514	0
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4440	Unemployment Compensation	N	0	10514	0	10514	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4540	Burden	N	0	2227855	0	2227855	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4540	Burden	N	0	2227855	0	2227855	0
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4540	Burden	N	0	2227855	0	2227855	0
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7016	Design			4540	Burden	N	0	2227855	0	2227855	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7017	Construction			1100	Permanent Time Worked	N	0	12280	0	12280	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7017	Construction			1100	Permanent Time Worked	N	0	12280	0	12280	0
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7017	Construction			1100	Permanent Time Worked	N	0	12280	0	12280	0
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7017	Construction			1100	Permanent Time Worked	N	0	12280	0	12280	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7017	Construction			2410	Rent City Vehicles	N	0	1034	0	1034	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7017	Construction			2410	Rent City Vehicles	N	0	1034	0	1034	0
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7017	Construction			2410	Rent City Vehicles	N	0	1034	0	1034	0
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7017	Construction			2410	Rent City Vehicles	N	0	1034	0	1034	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7017	Construction			4220	Life Insurance	N	0	31	0	31	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7017	Construction			4220	Life Insurance	N	0	31	0	31	0
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7017	Construction			4220	Life Insurance	N	0	31	0	31	0
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7017	Construction			4220	Life Insurance	N	0	31	0	31	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7017	Construction			4250	Social Security-Employer	N	0	939	0	939	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7017	Construction			4250	Social Security-Employer	N	0	939	0	939	0
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7017	Construction			4250	Social Security-Employer	N	0	939	0	939	0
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9136	McKinley-White-Arch Storm Vault	7017	Construction			4250	Social Security-Employer	N	0	939	0	939	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9857	Dexter Ave Impr-W Huron/N Maple	9000	Capital Outlay			4420	Transfer To Other Funds	N	0	0	7065500	-7065500	-20500000
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9857	Dexter Ave Impr-W Huron/N Maple	9000	Capital Outlay			4420	Transfer To Other Funds	N	0	0	7065500	-7065500	-20500000
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9857	Dexter Ave Impr-W Huron/N Maple	9000	Capital Outlay			4420	Transfer To Other Funds	N	0	0	7065500	-7065500	-20500000
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9857	Dexter Ave Impr-W Huron/N Maple	9000	Capital Outlay			4420	Transfer To Other Funds	N	0	0	7065500	-7065500	-20500000
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9874	PontiacTrail Imp-Skydale to M-14	9000	Capital Outlay			4420	Transfer To Other Funds	N	0	10145013	0	10145013	0
-0078	Community Dev Block Grant 	EXPENSES		040	Public Services	9874	PontiacTrail Imp-Skydale to M-14	9000	Capital Outlay			4420	Transfer To Other Funds	N	0	10145013	0	10145013	0
-0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9874	PontiacTrail Imp-Skydale to M-14	9000	Capital Outlay			4420	Transfer To Other Funds	N	0	10145013	0	10145013	0
 0081	Storm Sewer Revenue Bonds	EXPENSES		040	Public Services	9874	PontiacTrail Imp-Skydale to M-14	9000	Capital Outlay			4420	Transfer To Other Funds	N	0	10145013	0	10145013	0
 0082	Storm Sewer Revenue Bonds	ASSETS										2400.0099	Equity In Pooled cash & investments	N	-38495684	0	0	-38495684	-38495684
 0082	Storm Sewer Revenue Bonds	LIABILITIES AND FUND EQUITY	FUND EQUITY									6607	Retained Earnings	N	38495684	0	0	38495684	38495684

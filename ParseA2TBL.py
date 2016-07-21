@@ -123,7 +123,7 @@ def add_row(cur, pageNum, leftPoints, lowerPoints, rightPoints, upperPoints, pDF
         treatment = 'Page Number:'
         
     # Group Totals (Fund, agency, organization, activity), code and description
-    elif (rightMP == 230015) and mGroupTotals:
+    elif (rightMP == 230015 or rightMP == 229991) and mGroupTotals:
         
         groupName = mGroupTotals.group(1)
         groupCode = mGroupTotals.group(2)

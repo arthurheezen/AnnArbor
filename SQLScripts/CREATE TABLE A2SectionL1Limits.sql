@@ -17,10 +17,11 @@ AS
   
   -- Union L1 limits with no header/start
   SELECT 
-    MAX(AllEnds.SectionL1End)+10801 AS SectionL1Start,
+    MAX(AllEndsUnionFundStarts.SectionL1End)+10801 AS SectionL1Start,
     NoSectionStart.SectionL1End, 
     NoSectionStart.SectionL1Code
   FROM (
+  
       SELECT 
         SectionL1Code,
         SectionL1End
@@ -28,14 +29,27 @@ AS
         A2SectionL1LimitsTemp
       WHERE
        SectionL1Start=0
+       
     ) NoSectionStart
   INNER JOIN (
+  
       SELECT 
         SectionL1End 
       FROM   
         A2SectionL1LimitsTemp
-    ) AllEnds
-  ON AllEnds.SectionL1End < NoSectionStart.SectionL1End
+      
+      UNION ALL
+      
+      -- Start of funds
+      SELECT
+        FundStart AS SectionL1End
+      FROM
+        A2FundLimits
+        
+    ) AllEndsUnionFundStarts
+
+  ON AllEndsUnionFundStarts.SectionL1End < NoSectionStart.SectionL1End
+
   GROUP BY
     NoSectionStart.SectionL1Code,
     NoSectionStart.SectionL1End
@@ -45,7 +59,7 @@ AS
   -- Union L1 limits with no total/end
   SELECT 
     NoSectionEnd.SectionL1Start AS SectionL1Start, 
-    MIN(AllStartsUnionFundTotals.SectionL1Start)-10800 AS SectionL1End,
+    MIN(AllStartsUnionFundEnds.SectionL1Start)-10800 AS SectionL1End,
     NoSectionEnd.SectionL1Code AS SectionL1Code
   FROM (
   
@@ -75,9 +89,9 @@ AS
       FROM
         A2FundLimits
         
-    ) AllStartsUnionFundTotals
+    ) AllStartsUnionFundEnds
     
-  ON NoSectionEnd.SectionL1Start < AllStartsUnionFundTotals.SectionL1Start
+  ON NoSectionEnd.SectionL1Start < AllStartsUnionFundEnds.SectionL1Start
   GROUP BY
     NoSectionEnd.SectionL1Code,
     NoSectionEnd.SectionL1Start

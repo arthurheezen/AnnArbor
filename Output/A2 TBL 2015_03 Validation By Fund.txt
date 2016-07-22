@@ -47,7 +47,7 @@ Fund	Error in Balance Forward Totals	Error in YTD Debits Totals	Error in YTD Cre
 0060	0	0	0	0	0	0
 0061	0	0	0	0	0	0
 0062	0	0	0	0	0	0
-0064	0	9855235	9855235	0	0	19710470
+0064	0	0	0	0	0	0
 0065	0	0	0	0	0	0
 0066	0	0	0	0	0	0
 0069	0	0	0	0	0	0
